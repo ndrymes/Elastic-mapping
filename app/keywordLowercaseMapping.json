@@ -1,0 +1,25 @@
+
+{
+    "settings": {
+        "analysis": {
+            "normalizer": {
+                "lowercase_normalizer": {
+                    "type": "custom",
+                    "char_filter": [],
+                    "filter": ["lowercase"]
+                }
+            }
+        }
+    },
+    
+    "mappings": {
+        "type": {
+            "properties": {
+                "city": {
+                    "type": "keyword",
+                    "normalizer": "lowercase_normalizer"
+                }
+            }
+        }
+    }
+}
